@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(35, 79, 80);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(25, 103, 106);
+    width: 700px;
+    height: 500px;
+    border-radius: 30px;
+    animation: slideIn 5s infinite;
+    animation-delay: 1s;
+}
+/* @keyframes slideIn{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transition: 0.5s ease-in-out;
+        transform: rotate(95deg);
+    }
+    50%{
+        transition: 1s;
+        transform: rotate(360deg);
+    }
+    100%{
+        transition: 2s;
+        transform: rotate(0deg);
+    }
+} */
+
+@keyframes slideIn
+{
+    from{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.quote-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.quotes-line{
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-align: center;
+    transform: rotateX('180deg');
+}
+.author-line{
+    font-size: 1.2rem;
+    color: aliceblue;
+    float: right;
+    margin-top: 20px;
+    text-align: center;
+}
+button{
+    background-color: aliceblue;
+    border: none;
+    width: 100px;
+    height: 40px;
+    cursor:grab;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: black;
+    color: aliceblue;
+    width: 200px;
+}
+
+
